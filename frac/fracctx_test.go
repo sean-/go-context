@@ -1,11 +1,10 @@
 package ctxext
 
 import (
+	"context"
 	"os"
 	"testing"
 	"time"
-
-	context "golang.org/x/net/context"
 )
 
 // this test is on the context tool itself, not our stuff. it's for sanity on ours.

@@ -2,9 +2,8 @@
 package ctxext
 
 import (
+	"context"
 	"time"
-
-	context "golang.org/x/net/context"
 )
 
 // WithDeadlineFraction returns a Context with a fraction of the
@@ -42,8 +41,6 @@ import (
 //    // try transforms with all remaining time. hopefully it's enough!
 //    return transformer.Transform(ctx, val)
 //  }
-//
-//
 func WithDeadlineFraction(ctx context.Context, fraction float64) (
 	context.Context, context.CancelFunc) {
 
